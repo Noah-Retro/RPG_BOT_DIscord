@@ -1,0 +1,30 @@
+{
+    "Krieger":{
+        "description":"Ein Krieger hat von Natur aus schon hoehere Kampfwerte, jedoch kann er am anfang keien Zauber anwenden.",
+        "deff":10,
+        "atk":10,
+        "stamina":10,
+        "trading":1,
+        "sneak":3,
+        "cook":1,
+        "health":20,
+        "mana":1,
+        "craft":3,
+        "knowledge":1,
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mVkYMKZWmKZ0L5KmY8oZ49soygejp6w8Lg&usqp=CAU"
+    }, 
+    "Trader":{
+        "description":"Ein Haendler/Trader hat von begin an gute verbindungen zu den Maerkten und kann somit Rabbate erziehlen.",
+        "deff":1,
+        "atk":1,
+        "stamina":2,
+        "trading":30,
+        "sneak":1,
+        "cook":3,
+        "health":10,
+        "mana":1,
+        "craft":5,
+        "knowledge":0,
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mVkYMKZWmKZ0L5KmY8oZ49soygejp6w8Lg&usqp=CAU"
+    }
+}

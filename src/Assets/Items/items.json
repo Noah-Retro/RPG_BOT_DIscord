@@ -1,0 +1,106 @@
+{
+    "Base_Item":[
+        {
+            "name":"Apfel",
+            "value":1.0,
+            "description":"Ein Apfel.",
+            "img":""
+        },    
+        {
+            "name":"Diamant",
+            "value":1000.0,
+            "description":"Ein glaenzender Diamant.",
+            "img":"https://cdn.imgbin.com/6/1/25/diamond-icon-game-elements-icon-PpT3KrVD.jpg"
+        },        
+        {
+            "name":"Eisen",
+            "value":5,
+            "description":"Ein Metal das zur herstellung vieler Waffen und Rüstungen gebraucht wird.",
+            "img":""
+        },
+        {
+            "name":"Gold",
+            "value":20,
+            "description":"Ein Metal das zur herstellung vieler Waffen und Rüstungen gebraucht wird.",
+            "img":""
+        },    
+        {
+            "name":"Holz",
+            "value":5,
+            "description":"Ein einfaches Stück Holz",
+            "img":"https://cdn-icons-png.flaticon.com/512/3373/3373869.png"
+        },
+        {
+            "name":"Eichel",
+            "value":10,
+            "description":"Ein Eichel. Vieleicht kannst du sie pflanzen",
+            "img":""
+        }
+    ],
+    "Armor":[
+        {
+            "name":"Rüstung",
+            "value":0.0,
+            "description":"Eine Standart Rüstung",
+            "deff":10,
+            "img":""
+        },
+        {
+            "name":"Alte-Ruestung",
+            "value":0.0,
+            "description":"Eine ältere Rüstung",
+            "deff":5,
+            "img":""
+        }
+
+    ],
+    "Weapon":[
+        {
+            "name":"Holz-Schwert",
+            "value":0.0,
+            "description":"Ein einfaches Holzschwert",
+            "atk":2,
+            "img":"https://w7.pngwing.com/pngs/619/390/png-transparent-sword-bokken-icon-pretty-brown-wooden-sword-brown-hat-wooden-board.png"
+        },
+        {
+            "name":"Schwert",
+            "value":0.0,
+            "description":"Ein einfaches Schwert",
+            "atk":5,
+            "img":""
+        }
+    ],
+    "Artefact":[
+        {
+            "name":"Ring",
+            "value":100,
+            "description":"Ein einfacher Ring",
+            "atk":0,
+            "deff":0,
+            "stamina":0,
+            "mana":0,
+            "img":""
+        },
+        {
+            "name":"Ring2",
+            "value":105,
+            "description":"Ein einfacher Ring der deinen Angrif ein bischen verstärkt",
+            "atk":1,
+            "deff":0,
+            "stamina":0,
+            "mana":0,
+            "img":""
+        }
+    ],
+    "Potion":[
+        {
+            "name":"heal-potion-small",
+            "value":105,
+            "description":"Ein kleiner Trank der 5% deines lebens wieder herstelt",
+            "health":0.05,
+            "mana":0,
+            "stamina":0,
+            "img":"https://cdnb.artstation.com/p/assets/images/images/015/880/757/large/valerie-reed-asset.jpg?1550022173"
+        }
+    ]   
+}

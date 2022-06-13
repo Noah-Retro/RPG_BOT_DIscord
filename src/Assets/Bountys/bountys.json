@@ -1,0 +1,30 @@
+{
+    "Bounty":[
+        {
+            "name":"Holz sammeln",
+            "level":1,
+            "task":[
+                {
+                    "item_name":"Holz",
+                    "quantity":5
+                }
+            ],
+            "reward_money":10,
+            "reward_items":[["Holz",10],["Apfel",5]],
+            "exp":10    
+        },
+        {
+            "name":"Gold sammeln",
+            "level":20,
+            "task":[
+                {
+                    "item_name":"Gold",
+                    "quantity":10
+                }
+            ],
+            "reward_money":10000,
+            "reward_items":[["Apfel",5]],
+            "exp":1000    
+        }
+    ]
+}

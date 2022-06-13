@@ -1,0 +1,55 @@
+{
+    "Enemys":[
+        {
+            "name":"Zombie",
+            "level":10,
+            "atk":10,
+            "_def":10,
+            "weapon":{
+                "name":"",
+                "stat":0
+            },
+            "armor":{
+                "name":"",
+                "stat":0
+            },
+            "drop":[
+                {
+                    "item":"Apfel",
+                    "dropchance":0.1
+                },
+                {
+                    "item":"Eisen",
+                    "dropchance":0.1
+                }],
+            "spell":""
+        }
+    ],
+    "Boss":[
+        {
+            "name":"Big Zombie",
+            "level":10,
+            "atk":10,
+            "_def":10,
+            "weapon":{
+                "name":"",
+                "stat":0
+            },
+            "armor":{
+                "name":"",
+                "stat":0
+            },
+            "drop":[
+                {
+                    "item":"Apfel",
+                    "dropchance":0.1
+                },
+                {
+                    "item":"Eisen",
+                    "dropchance":0.1
+                }],
+            "spell":""
+        }
+    ]
+    
+}

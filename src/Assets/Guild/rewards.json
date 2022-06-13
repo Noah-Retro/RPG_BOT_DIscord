@@ -1,0 +1,14 @@
+{
+    "Rewards":[
+        {
+            "level":1,
+            "item":"Holz"
+        },{
+            "level":2,
+            "item":"Holz"
+        },{
+            "level":3,
+            "item":"Holz"
+        }
+    ]
+}

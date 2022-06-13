@@ -1,0 +1,28 @@
+{
+    "Mensch":{
+        "description":"Menschen sind nicht besonders begabt im Kampf. Jedoch haben sie das Handwerk und Leise sein perfektioniert.",
+        "deff":0,
+        "atk":0,
+        "stamina":2,
+        "trading":2,
+        "sneak":10,
+        "cook":5,
+        "health":0,
+        "mana":0,
+        "craft":10,
+        "knowledge":1
+    },
+    "Zwerg":{
+        "description":"Zwerge sind sehr gut im herstellen und verkaufem von Waffen und anderen Gegenstaenden.",
+        "deff":0,
+        "atk":0,
+        "stamina":0,
+        "trading":10,
+        "sneak":0,
+        "cook":1,
+        "health":0,
+        "mana":5,
+        "craft":15,
+        "knowledge":1
+    }
+}

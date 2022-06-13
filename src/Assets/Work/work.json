@@ -1,0 +1,40 @@
+{
+    "Work":[
+        {
+            "name":"Holz hacken",
+            "items":[
+                {
+                    "name":"Holz",
+                    "drop_chance":1
+                },
+                {
+                    "name":"Apfel",
+                    "drop_chance":0.5
+                },
+                {
+                    "name":"Eichel",
+                    "drop_chance":0.1
+                }
+            ],
+            "level":1            
+        },
+        {
+            "name":"Eisen abbauen",
+            "items":[
+                {
+                    "name":"Eisen",
+                    "drop_chance":0.5
+                },
+                {
+                    "name":"Gold",
+                    "drop_chance":0.2
+                },
+                {
+                    "name":"Diamant",
+                    "drop_chance":0.01
+                }
+            ],
+            "level":20            
+        }
+    ]
+}

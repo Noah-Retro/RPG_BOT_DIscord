@@ -1,0 +1,70 @@
+{
+    "Base_Recepie":[
+        {
+            "Item":"Ring",
+            "skill":5,
+            "Items":[
+                {
+                    "Name":"Eisen",
+                    "Quantity":5
+                }
+            ]
+            
+        },
+        {
+            "Item":"Ring2",
+            "skill":6,
+            "Items":[
+                {
+                    "Name":"Eisen",
+                    "Quantity":6
+                }
+            ]
+            
+        },
+        {
+            "Item":"Holz",
+            "skill":3,
+            "Items":[
+                {
+                    "Name":"Holz",
+                    "Quantity":1
+                }
+            ]
+            
+        },
+        {
+            "Item":"Diamant",
+            "skill":100,
+            "Items":[
+                {
+                    "Name":"Holz",
+                    "Quantity":1000
+                }
+            ]
+            
+        },{
+            "Item":"Holz-Schwert",
+            "skill":2,
+            "Items":[
+                {
+                    "Name":"Holz",
+                    "Quantity":3
+                }
+            ]
+            
+        },{
+            "Item":"Rüstung",
+            "skill":5,
+            "Items":[
+                {
+                    "Name":"Eisen",
+                    "Quantity":20
+                }
+            ]
+            
+        }
+        
+    ]
+    
+}

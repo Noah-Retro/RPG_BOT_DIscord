@@ -1,0 +1,118 @@
+
+python -m unittest discover -s tests -v
+
+
+Work nach 25 freigeschaltenen arbeit niedrigste level arbeit ersetzen mit neuer arbeit
+
+
+Trades in ein View verwandeln   
+    Pro seite max 25 wegen select
+
+Base
+    Storyline
+    Quests
+    Markets
+    Dungeons
+    Raids
+    items
+    Crafting recepies
+    NPC
+    Weapons
+    Spells
+
+Post stelle für nicht eingesammelte items
+    Bei Spieler speichern
+    Unlimited items in bigger text based inventory
+
+upgrade Weapons
+    ka some special item to upgrade
+
+Fight mechanics
+    25 attacks can be equiped
+    25 spells can be equiped
+    items from inventory can be used
+    MAKE THE FUCKING VISUALS FOR THE FUCKING FIGHT MECHANIKS
+
+Cyties?
+    Guild aliances
+    random NPC are comming in to town
+        random quests and bountys and items
+
+Tutorial
+    Tutorial cog
+        all importand commands
+
+custom help commands
+    cog help
+    command help
+    geting started
+    Write custom info for commands and cogs
+
+Better Images in Embed
+    Pillow
+    other laibary
+
+Mariges
+    player can marry
+
+Mini games
+    Casino
+        Poker
+        Blackjack
+        Rulet
+    
+PVP
+    Battle players
+    Tournaments
+    
+Money
+    Spieler können mit Diamanten das aussehen so wie alles andere an Ihrem charakter ändern
+    Diamanten werden mit echt Geld gekauft oder im Late Game freigeschalten
+
+Trade View
+    accept_trade
+    next page etc.
+
+Fight mechanik
+
+Quests and Story update
+
+For website for buying shit or release notes
+from requests import get
+        ip = get('https://api.ipify.org').content.decode('utf8')
+        print('My public IP address is: {}'.format(ip))
+
+Real life test
+-----------------------------------------
+crafting Cog
+    craft_item       ✔️
+    show_items       ✔️ 
+    show_rezepie_item✔️
+    show_rezepies    ✔️
+
+Event Cog
+    reload
+
+Gamplay Cog
+    accept_trade    ✔️
+
+    create_trade    ✔️
+    remove_trade    ✔️
+    show_trades     ✔️
+
+    pause_work      ✔️
+    collect_bounty  ✔️
+    work            ✔️
+
+    unequip_armor   ✔️
+    unequip_weapon  ✔️
+    equip_armor     ✔️
+    equip_weapon    ✔️
+
+    use_skill_token ✔️
+
+admin Cog ✔️
+
+character Cog ✔️
+
+player_infos Cog ✔️

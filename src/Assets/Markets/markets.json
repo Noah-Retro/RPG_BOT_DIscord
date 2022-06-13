@@ -1,0 +1,43 @@
+{
+    "Market":[
+        {
+            "name":"Market",
+            "level":200,
+            "trades":[
+                {
+                    "item":"Apfel",
+                    "quantity":1,
+                    "price":2
+                },
+                {
+                    "item":"Eisen",
+                    "quantity":5,
+                    "price":30
+                }
+            ],
+            "bountys":[
+                "Holz sammeln"
+            ]
+        },
+        {
+            "name":"start_market",
+            "level":1,
+            "trades":[
+                {
+                    "item":"Apfel",
+                    "quantity":1,
+                    "price":2
+                },
+                {
+                    "item":"Eisen",
+                    "quantity":5,
+                    "price":30
+                }
+            ],
+            "bountys":[
+                "Holz sammeln",
+                "Gold sammeln"
+            ]
+        }
+    ]
+}
