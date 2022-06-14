@@ -37,9 +37,9 @@ class Market_Detail_Select_Trade(nextcord.ui.Select):
         player = self.Interface.load_player(str(interaction.user))
         done,cost= mh.trade(item=item,player=player)
         if done:
-            await interaction.send(f'{interaction.user} hat {item} bei {mh.name} gekauft zum preis von {cost}')
+            await interaction.send(f'{interaction.user} hat {item} bei {mh.name} gekauft zum preis von {cost}',ephemeral=True)
         else:
-            await interaction.send(f'Etwas ist schief gelaufen. Kontrolliere nochmals ob alle Angaben richtig sind.')
+            await interaction.send(f'Etwas ist schief gelaufen. Kontrolliere nochmals ob alle Angaben richtig sind.',ephemeral=True)
         self.Interface.store_player(player)
 
 class Market_Detail_Select_Bounty(nextcord.ui.Select):
@@ -56,9 +56,9 @@ class Market_Detail_Select_Bounty(nextcord.ui.Select):
     async def callback(self, interaction: nextcord.Interaction):
         player=self.Interface.load_player(name=str(interaction.user))
         if self.ma.give_bounty(bounty=self.Al.load_bounty(self.values[0]),player=player):
-            await interaction.send(f'{self.values[0]} wurde {interaction.user} gegeben')
+            await interaction.send(f'{self.values[0]} wurde {interaction.user} gegeben',ephemeral=True)
         else:
-            await interaction.send(f'Etwas ist schief gelaufen. Kontrolliere nochmals ob du genügend Platz im Inventar hast.')
+            await interaction.send(f'Etwas ist schief gelaufen. Kontrolliere nochmals ob du genügend Platz im Inventar hast.',ephemeral=True)
         self.Interface.store_player(player)
 
 def Market_Embed(m:Market):
@@ -86,7 +86,7 @@ class Market_Select(nextcord.ui.Select):
     def __init__(self,ma, custom_id: str = "Market:Select", placeholder="Wähle einen Markt", min_values: int = 1, max_values: int = 1) -> None:
         op=[]
         for m in ma:
-            op.append(nextcord.SelectOption(label=str(m.name)))
+            op.append(nextcord.SelectOption(label=str(m.name),description=f"min level: {m.level}"))
         self.Al = Asset_Loader()
         super().__init__(custom_id=custom_id, placeholder=placeholder, min_values=min_values, max_values=max_values, options=op)
            

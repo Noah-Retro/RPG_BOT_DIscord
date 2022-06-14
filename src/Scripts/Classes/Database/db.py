@@ -146,7 +146,8 @@ class DB():
                     house=r[7],
                     voicechannel=r[8],
                     textchannel=r[9],
-                    category=r[10])
+                    category=r[10],
+                    color=r[11])
         return guild
 
     def del_guild(self,name:str):
@@ -166,7 +167,8 @@ class DB():
                 _house=?,
                 _voicechannel=?,
                 _textchannel=?,
-                _category=?
+                _category=?,
+                _color=?
             WHERE _name = ? """,(
                 player,
                 guild.leader,
@@ -177,6 +179,7 @@ class DB():
                 guild.voicechannel,
                 guild.textchannel,
                 guild.category,
+                str(guild.color),
                 guild.name
             ))
         self.con.commit()

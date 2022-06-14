@@ -11,6 +11,33 @@ from src.Scripts.Discord_Gui_Bot.Custom_embeds.Views.inventory_view import Inven
 from src.Scripts.Classes.Database.db import DB
 from src.Scripts.Functions.logger import log
 from docs.infos import AUTHOR, GITHUBACCLINK
+import validators
+
+ColorsOptions=[
+'blue',
+'blurple',
+'brand_green',
+'brand_red',
+'dark_gold',
+'dark_green',
+'dark_magenta',
+'dark_orange',
+'dark_purple',
+'dark_red',
+'darker_grey',
+'fuchsia',
+'gold',
+'green',
+'greyple',
+'light_gray',
+'magenta',
+'og_blurple',
+'orange',
+'purple',
+'random',
+'red',
+'teal',
+'yellow']
 
 
 class player_infos(commands.Cog):
@@ -27,6 +54,9 @@ class player_infos(commands.Cog):
     async def show_inventory(self,interaction:nextcord.Interaction,show_off=SlashOption(name="show",description="True = alle können es sehen",required=False,default="False",choices=["False","True"])):
         p=self.Interface.load_player(name=str(interaction.user))
         e = character_embed(interaction,p)
+        if show_off=="True":
+            await interaction.send(embed=e)
+            return 
         view = Inventory_View(p)
         await interaction.send(embed=e,view=view,ephemeral=bool(show_off=="False"))
         
@@ -38,6 +68,36 @@ class player_infos(commands.Cog):
         view = Stats_Inventory_View(player)
         embed = stats_embed(player)
         await interaction.send(embed=embed,view=view,ephemeral=True)
+
+    @player.subcommand(name="change",description="Ändere dein aussehen oder deine beschreibungen")
+    async def change(self,interaction:nextcord.Interaction):
+        print("Test")
+
+    @change.subcommand(name="image",description="Ändere dein Character Bild. NUR DIREKTE LINKS ZU BILDER")
+    async def image(self,interaction:nextcord.Interaction,imgurl:str):
+        player = self.Interface.load_player(str(interaction.user))
+        if not validators.url(imgurl):
+            await interaction.send("Der input ist keine gültige URL",ephemeral=True)
+        player.img = imgurl
+        self.Interface.store_player(player)
+        await interaction.send("Dein Bild wurde geupdated",ephemeral=True)
+
+    @change.subcommand(name="color",description="Farbe für deine Embeds")
+    async def color(self,interaction:nextcord.Interaction,
+        color=SlashOption(choices=ColorsOptions)):
+        ec = nextcord.Color(0)
+        player = self.Interface.load_player(str(interaction.user))
+        player.color=ec.__getattribute__(color)()
+        self.Interface.store_player(player)
+        await interaction.send(f"Deine Farbe ist jetzt {color}",ephemeral=True)
+
+    @change.subcommand(name="character_name",description="Ändere deinen Charakername")
+    async def character_name(self,interaction:nextcord.Interaction,name:str):
+        player = self.Interface.load_player(str(interaction.user))
+        player.character_name = name
+        self.Interface.store_player(player)
+        await interaction.send(f"Dein Character heisst jetzt {name}",ephemeral=True)
+
 
     #@player.subcommand(name="help",description="Zeigt dir die Hilfe für diese Befehle an")
     #async def help(self,interaction:nextcord.Interaction):

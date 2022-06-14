@@ -1,7 +1,7 @@
 import dataclasses
 import time
 from typing import Any, List
-
+import nextcord
 from src.Scripts.Classes.Damagable.damagable import Damagable
 from src.Scripts.Classes.Events.event_manager import Event_Manager
 from src.Scripts.Classes.Informations.informations import Informations
@@ -18,6 +18,7 @@ class Player(Informations,Player_Inventory,Stat,Damagable):
     name:str=""
     character_name:str=""
     id:int=0
+    color:nextcord.Color=None
     work:Work=None
     mana_used:int=0
     stamina_used:int=0
@@ -102,4 +103,6 @@ class Player(Informations,Player_Inventory,Stat,Damagable):
         self.work = None
         return rew
 
-    
+    def add_stats(self,**kwargs):
+        for key in kwargs:
+            self.__setattr__(key,kwargs[key])

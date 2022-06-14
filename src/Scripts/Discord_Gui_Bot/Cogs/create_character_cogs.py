@@ -16,6 +16,7 @@ from src.Scripts.Classes.Database.db import DB
 from nextcord.ext import commands
 import nextcord
 from nextcord import slash_command
+import validators
 
 class character(commands.Cog):
     """Alles was man zum erstellen eines Characters braucht"""
@@ -25,7 +26,7 @@ class character(commands.Cog):
         self.Al = Asset_Loader()
 
     @slash_command(name='create_character',description='Erstellt ein character.')
-    async def create_character(self,interaction:nextcord.Interaction,_character_name:str,_alter:int,_grösse:float,_besonderheiten:str,_class:str,story:str,gender:str,rasse:str,img_url:str=SlashOption(name="image_url",required=False),aussehen:str=SlashOption(name="aussehen",required=False)):
+    async def create_character(self,interaction:nextcord.Interaction,_character_name:str,_alter:int,_grösse:float,_besonderheiten:str,story:str,gender:str,img_url:str=SlashOption(name="image_url",required=False),aussehen:str=SlashOption(name="aussehen",required=False)):
         """Erzeugt ein Spieler in der Datenbank. Man kann nach dem erstellen alle funktionen nutzen.
         Alle Werte welche ein Leerzeichen enthalten müssen in Anführungszeichen stehen.
         z.B. "Vorname Nachname"
@@ -45,24 +46,24 @@ class character(commands.Cog):
         Extra:
             Es kann ein Bild hinzugefügt werden das deinen Character wieder Spiegelt. Man muss dazu den command als Kommentar bei einem bild hinschreiben, dass man hoch lädt
         """
-        if not img_url.endswith((".jpg",".png")) and img_url != None:     
-            await interaction.send("img_url must end with .jpg or .png")   
+        if not validators.url(img_url):     
+            await interaction.send("img_url must end with .jpg or .png")
+            return   
         p = Player(name=str(interaction.user),
             character_name=_character_name,
                 story=story,
                 looks=aussehen,
-                p_class=_class,
+                p_class=None,
                 gender=gender,
-                race=rasse,
+                race=None,
                 img= img_url ,
                 age=_alter,
                 height=_grösse,
                 specials=_besonderheiten,
-                **self.Al.load_stats(_class,rasse))
+                )
 
-        self.Interface.create_character(p)
-        log(f"{interaction.user} hat einen Char erstellt Klasse:{_class},Rasse:{rasse},Gender:{gender}")
-        await interaction.send(f"Spieler {interaction.user} wurde registriert")
+        
+        await interaction.send(f"Wähle noch eine Klasse und eine Rasse aus",view=Select_View(p))
         
 
     @commands.command(name='rassen',brief='Zeig alle verfügbaren Rassen')
@@ -139,3 +140,51 @@ class character(commands.Cog):
         **craft:** Kann immer wie schwerere rezepte craften""")
         log(1,f"{ctx.message.author} hat stats_info aufgerufen")
         await ctx.send(embed= e)
+
+
+
+class ClassSelect(nextcord.ui.Select):
+    def __init__(self,player) -> None:
+        super().__init__(placeholder="Wähle eine Klasse aus!")
+        al = Asset_Loader()
+        classes = al.load_p_classes()
+        for key in classes:
+            self.add_option(label=key,value=key,description=classes[key]["description"][0:90] if len(classes[key]["description"])>90 else classes[key]["description"])
+        self.player = player
+
+    async def callback(self, interaction: nextcord.Interaction):
+        self.player.p_class = self.values[0]
+        Al = Asset_Loader()
+        if self.player.race != None and self.player.race != "":
+            db = DB()
+            self.player.add_stats(**Al.load_stats(self.player.p_class,self.player.race))
+
+            db.create_character(self.player)
+            await interaction.send("Charakter wurde erstellt")
+        await interaction.edit(view=Select_View(self.player))
+            
+class RaceSelect(nextcord.ui.Select):
+    def __init__(self,player:Player) -> None:
+        super().__init__(placeholder="Wähle eine Rasse aus!")
+        al = Asset_Loader()
+        classes = al.load_races()
+        for key in classes:
+            self.add_option(label=key,value=key,description=classes[key]["description"][0:90] if len(classes[key]["description"])>90 else classes[key]["description"])
+        self.player = player
+
+    async def callback(self, interaction: nextcord.Interaction):
+        self.player.race = self.values[0]
+        Al = Asset_Loader()
+        if self.player.p_class != None and self.player.p_class != "":
+            db = DB()
+            self.player.add_stats(**Al.load_stats(self.player.p_class,self.player.race))
+
+            db.create_character(self.player)
+            await interaction.send("Charakter wurde erstellt")
+        await interaction.edit(view=Select_View(self.player))
+     
+class Select_View(nextcord.ui.View):
+    def __init__(self,player):
+        super().__init__()
+        self.add_item(ClassSelect(player))
+        self.add_item(RaceSelect(player))

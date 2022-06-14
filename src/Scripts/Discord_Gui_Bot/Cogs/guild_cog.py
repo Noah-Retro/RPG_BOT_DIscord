@@ -1,5 +1,5 @@
 from random import random
-from discord import slash_command,user_command
+from discord import SlashOption, slash_command,user_command
 
 import nextcord
 from nextcord.ext import commands
@@ -8,6 +8,31 @@ from src.Scripts.Classes.Database.db import DB
 from src.Scripts.Discord_Gui_Bot.Custom_embeds.Modals.create_guild_modal import (
     Create_Guild_Modal, Create_Guild_View)
 
+ColorsOptions=[
+'blue',
+'blurple',
+'brand_green',
+'brand_red',
+'dark_gold',
+'dark_green',
+'dark_magenta',
+'dark_orange',
+'dark_purple',
+'dark_red',
+'darker_grey',
+'fuchsia',
+'gold',
+'green',
+'greyple',
+'light_gray',
+'magenta',
+'og_blurple',
+'orange',
+'purple',
+'random',
+'red',
+'teal',
+'yellow']
 
 class Guild_Cog(commands.Cog):
     def __init__(self,bot:commands.Bot):
@@ -180,3 +205,12 @@ class Guild_Cog(commands.Cog):
             guild.add_player(f"Player#02{i}")
         self.Interface.store_guild(guild)
 
+    @guild.subcommand(name="change_color",description="Änder die farbe für deine Guilde")
+    async def change_color(self,interaction:nextcord.Interaction,
+    color=SlashOption(choices=ColorsOptions)):
+        ec = nextcord.Color(0)
+        player = self.Interface.load_player(str(interaction.user))
+        guild= self.Interface.load_guild(player.guild)
+        guild.color=ec.__getattribute__(color)()
+        self.Interface.store_guild(guild)
+        await interaction.send(embed=guild.embed,ephemeral=True)

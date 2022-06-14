@@ -18,7 +18,7 @@ def character_embed(ctx,p:Player):
     embed = nextcord.Embed(
         title = "Character Infos",
         description = "Hier siehst du Informationen zu deinem Character. Für mehr Informationen zu deinem Inventar oder offenen Trades verwende die entsprechenden Commands.",
-        colour = nextcord.Colour.blue()
+        colour = nextcord.Colour.blue() if p.color==None else p.color
     )
     embed.set_footer(text=CREATED)
     embed.set_image(url=p.img)

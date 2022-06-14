@@ -25,7 +25,7 @@ class Market():
                     player.add_item(t.item)
                     final_price = t.price-rabat
                     return True,final_price
-        return False
+        return False,0
 
     def give_bounty(self,player:Player,bounty:Bounty):
         for b in self.bountys:

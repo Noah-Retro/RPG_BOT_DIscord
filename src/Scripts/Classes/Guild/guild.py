@@ -1,4 +1,4 @@
-from typing import List
+from typing import List,Any
 from dataclasses import dataclass
 from src.Scripts.Classes.Events.event_manager import Event_Manager
 from docs.conf import LEVEL_UP_EXP
@@ -18,6 +18,7 @@ class Guild:
     textchannel:str
     category:str
     level:int=1
+    color:Any=0
     
     def add_exp(self,exp):
         self.nextlevel=LEVEL_UP_EXP**self.level*25
@@ -58,7 +59,7 @@ class Guild:
 
     @property
     def embed(self)->nextcord.Embed:
-        e = nextcord.Embed(title=self.name)
+        e = nextcord.Embed(title=self.name,color=int(self.color) if self.color != None else 0)
         e.set_thumbnail(url=self.emblem)
         e.set_image(url=self.house)
         e.add_field(name="Members",value=f"**Leader:** {self.leader}\n**Members:**\n {self.get_player_names_str()}")

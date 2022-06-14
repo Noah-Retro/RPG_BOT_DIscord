@@ -68,7 +68,7 @@ class admin(commands.Cog):
         ph.sub_money(amount)
         self.Interface.store_player(ph)
         await ctx.send(f"{player_name} wurden {amount}$ abgezogen")
-        log(1,f"{player_name} wurden {amount}$ abgezogen von {ctx.user}",ephemeral=True)
+        log(1,f"{player_name} wurden {amount}$ abgezogen von {ctx.user}")
  
     @commands.is_owner()
     @slash_command(name=f'set_skill',description=f'setzt einen Skill auf einen gewünschten Wert',guild_ids=[879020821174169640])
@@ -83,7 +83,6 @@ class admin(commands.Cog):
     @commands.is_owner()
     @user_command(name="delete character",guild_ids=[879020821174169640])
     async def del_character(self,interaction:nextcord.Interaction,user):
-        print(interaction,user)
         self.Interface.del_player(str(user))
         await interaction.send(f"{user} wurde gelöscht")
         log(1,f"{interaction.user} hat {user} seinen Character gelöscht")

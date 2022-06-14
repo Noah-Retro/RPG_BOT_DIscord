@@ -1,5 +1,5 @@
-Drop Table if Exists suggsetions;
-/*Drop Table if Exists guild;
+/*Drop Table if Exists suggsetions;
+Drop Table if Exists guild;
 Drop Table if Exists player;
 
 
@@ -20,9 +20,10 @@ Create Table guild(
     _house Text,
     _voicechannel TEXT,
     _textchannel Text,
-    _category Text   
+    _category Text,
+    _color TEXT   
 );
-*/
+
 
 Create Table suggsetions(
     id Integer Primary Key AUTOINCREMENT,
@@ -32,3 +33,4 @@ Create Table suggsetions(
     payed BOOLEAN DEFAULT FALSE,
     Timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+*/

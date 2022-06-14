@@ -4,6 +4,29 @@ python -m unittest discover -s tests -v
 
 Work nach 25 freigeschaltenen arbeit niedrigste level arbeit ersetzen mit neuer arbeit
 
+Bug 
+    URL create character
+        Character Select Class and Race
+    Player Inventory View
+        Loading the Player new insted of passing it through
+    Base Aarmor Weapon
+    Item bei Market kaufen
+    Bounty sammeln
+
+Character
+    Edit later
+        Real Money = 1Fr. per atr
+    Color for embed
+        Real Money = 1Fr.
+
+Guild customizable
+    Edit Image
+        Real Money
+    Edit Emblem
+        Real Money
+    Edit Color
+        Real Money
+    
 
 Trades in ein View verwandeln   
     Pro seite max 25 wegen select
@@ -48,9 +71,6 @@ custom help commands
     geting started
     Write custom info for commands and cogs
 
-Better Images in Embed
-    Pillow
-    other laibary
 
 Mariges
     player can marry

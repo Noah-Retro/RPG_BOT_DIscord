@@ -20,7 +20,10 @@ from src.Scripts.Discord_Gui_Bot.Custom_embeds.Fields.stats_field import \
 
 
 def stats_embed(player:Player)->nextcord.Embed:
-    e = nextcord.Embed(title="Stats from your character")
+    color=nextcord.Color.default()
+    if player.color!=None:
+        color=player.color
+    e = nextcord.Embed(title="Stats from your character",color=color)
     e.add_field(name="Skilltoken",value=f"Your skilltokens: {player.skill_tokens}")
     embed = Stats_field(e,s = player)
     return embed

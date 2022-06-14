@@ -41,6 +41,9 @@ CURRENT_CHANGELOGG=[
     },{
         "title":"**Recepies**",
         "body":"""Rezepte werden jetzt mit einem Slash command aufgerufen. Unter /Book kannst du dan die verschiedenen Bücher aufschlagen."""
+    },{
+        "title":"**Change Character precense**",
+        "body":"**You can now edit your character and choss a color for your Inventory**"
     }
 ]
 [
