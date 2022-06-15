@@ -4,6 +4,10 @@ python -m unittest discover -s tests -v
 
 Work nach 25 freigeschaltenen arbeit niedrigste level arbeit ersetzen mit neuer arbeit
 
+spelltypes = single,multy
+    single one target
+    multy == Fireteam or Enemys
+
 Bug 
 
     Player Inventory View

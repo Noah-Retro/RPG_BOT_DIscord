@@ -14182,3 +14182,63 @@ INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103
 INFO:nextcord.client:nextcord.Client: Found an interaction command.
 INFO:nextcord.client:nextcord.Client: Calling your application command now fight
 INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 2 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-cp5g",{"micros":164110,"calls":["discord-sessions-green-prd-2-75",{"micros":160547,"calls":["start_session",{"micros":138403,"calls":["discord-api-d887bb4d9-vf9z4",{"micros":130456,"calls":["get_user",{"micros":12995},"add_authorized_ip",{"micros":30418},"get_guilds",{"micros":29792},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 93295c34fbb0e5c959c2b45f78c992f7).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 3 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-sgr7",{"micros":129493,"calls":["discord-sessions-green-prd-2-73",{"micros":128771,"calls":["start_session",{"micros":71111,"calls":["discord-api-d887bb4d9-zh8nc",{"micros":65682,"calls":["get_user",{"micros":20565},"add_authorized_ip",{"micros":1589},"get_guilds",{"micros":6797},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: e5a4969de6849616e379d8cc191faa0f).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 3 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-6pc3",{"micros":114529,"calls":["discord-sessions-green-prd-2-8",{"micros":112684,"calls":["start_session",{"micros":42179,"calls":["discord-api-d887bb4d9-s9q4c",{"micros":36344,"calls":["get_user",{"micros":7168},"add_authorized_ip",{"micros":4236},"get_guilds",{"micros":3995},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":35983,"calls":[]}]}]}] (Session ID: 7439ac5ccd1157771e7c5ed9cbf48c43).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 2 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-cm91",{"micros":100474,"calls":["discord-sessions-green-prd-2-153",{"micros":99551,"calls":["start_session",{"micros":87144,"calls":["discord-api-d887bb4d9-ctsqg",{"micros":81360,"calls":["get_user",{"micros":28319},"add_authorized_ip",{"micros":4046},"get_guilds",{"micros":13070},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":6,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 946868f2ffc19f12fbaafdaa3228d69e).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 3 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-bsdx",{"micros":76253,"calls":["discord-sessions-green-prd-2-140",{"micros":75399,"calls":["start_session",{"micros":44295,"calls":["discord-api-d887bb4d9-p88tn",{"micros":38888,"calls":["get_user",{"micros":12104},"add_authorized_ip",{"micros":1478},"get_guilds",{"micros":3237},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":27062,"calls":[]}]}]}] (Session ID: 3aa314c91e0fb2921118e510d8eacb61).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight

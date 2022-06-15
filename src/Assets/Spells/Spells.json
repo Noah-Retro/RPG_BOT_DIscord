@@ -1,5 +1,7 @@
+
 {
     "Heal":{
+        "type":"single",
         "knowledge":2,
         "mana":2,
         "atk":0,
