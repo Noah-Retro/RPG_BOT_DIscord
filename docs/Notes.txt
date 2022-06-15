@@ -5,8 +5,7 @@ python -m unittest discover -s tests -v
 Work nach 25 freigeschaltenen arbeit niedrigste level arbeit ersetzen mit neuer arbeit
 
 Bug 
-    URL create character
-        Character Select Class and Race
+
     Player Inventory View
         Loading the Player new insted of passing it through
     Base Aarmor Weapon
@@ -72,7 +71,7 @@ custom help commands
     Write custom info for commands and cogs
 
 
-Mariges
+Marrieges
     player can marry
 
 Mini games

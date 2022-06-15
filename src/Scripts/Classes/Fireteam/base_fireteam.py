@@ -3,6 +3,7 @@ from typing import Any, List
 
 from nextcord import Embed
 import nextcord
+from src.Scripts.Classes.Activity.activity import Activity
 from src.Scripts.Classes.HealthBar.healthbar import HelthBar
 from src.Scripts.Classes.Character.player import Player
 from src.Scripts.Classes.Database.db import DB
@@ -17,9 +18,14 @@ class Base_Fireteam():
     bufs:List[Any]=None
     base_level:int=0
     max_players:int=6
+    fight:Any=None
+    activity:Activity=None
+
 
     @property
     def embed(self):
+        if len(self.players) <= 0:
+            return None
         e = Embed(title=self.players[0].name)
         e.description = "Hier siehst du alle Spieler"
         for i in self.players:
@@ -77,24 +83,3 @@ class Base_Fireteam():
     
 
 
-
-class Fireteam_View(nextcord.ui.View):
-    def __init__(self,ft):
-        super().__init__()
-        self.ft=ft
-
-    @nextcord.ui.button(label="join")
-    async def joinb(self,button,interaction):
-        d = DB()
-        p = d.load_player(str(interaction.user))
-        p.fireteam=self.ft
-        self.ft.join(p)
-        await interaction.message.edit(embed=self.ft.embed)
-
-    @nextcord.ui.button(label="leave")
-    async def leveb(self,button,interaction:nextcord.Interaction):
-        d = DB()
-        p = d.load_player(str(interaction.user))
-        p.fireteam=None
-        self.ft.leave(str(interaction.user))
-        await interaction.message.edit(embed=self.ft.embed)

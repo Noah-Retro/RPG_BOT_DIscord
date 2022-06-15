@@ -4,9 +4,9 @@ from nextcord.ext import commands
 from nextcord.ext.commands import has_permissions
 import nextcord
 from nextcord.utils import get
+from src.Scripts.Discord_Gui_Bot.Custom_embeds.Views.fireteam_view import Fireteam_View
 from src.Scripts.Classes.Damage.damage import Damage
-from src.Scripts.Classes.Fireteam.base_fireteam import Base_Fireteam, Fireteam_View
-
+from src.Scripts.Classes.Fireteam.base_fireteam import Base_Fireteam
 from src.Scripts.Classes.Database.db import DB
 from src.Scripts.Classes.Character.player import Player
 from src.Scripts.Functions.logger import log

@@ -26,7 +26,7 @@ class character(commands.Cog):
         self.Al = Asset_Loader()
 
     @slash_command(name='create_character',description='Erstellt ein character.')
-    async def create_character(self,interaction:nextcord.Interaction,_character_name:str,_alter:int,_grösse:float,_besonderheiten:str,story:str,gender:str,img_url:str=SlashOption(name="image_url",required=False),aussehen:str=SlashOption(name="aussehen",required=False)):
+    async def create_character(self,interaction:nextcord.Interaction,_character_name:str,_alter:int,_grösse:float,_besonderheiten:str,story:str,gender:str,img_url:str=SlashOption(name="image_url",description="Wen du kein bild möchtest kannst du irgend eine URL verwenden",required=True),aussehen:str=SlashOption(name="aussehen",required=True)):
         """Erzeugt ein Spieler in der Datenbank. Man kann nach dem erstellen alle funktionen nutzen.
         Alle Werte welche ein Leerzeichen enthalten müssen in Anführungszeichen stehen.
         z.B. "Vorname Nachname"

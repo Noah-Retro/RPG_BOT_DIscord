@@ -88,7 +88,7 @@ Requirements are:
 -	Able to work remote
 -	Intermidiate to high level skills in Python and SQL
 -	English kowledge
--	Knowledge about the discord API and or about  nextcord V1.6 and above
+-	Knowledge about the discord API and or about nextcord V2.0 and above
 
 # Authors and acknowledgment
 

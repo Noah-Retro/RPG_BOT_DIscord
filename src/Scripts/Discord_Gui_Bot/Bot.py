@@ -2,6 +2,7 @@ from os import name
 import sys
 import nextcord
 from nextcord.ext import commands
+from src.Scripts.Discord_Gui_Bot.Cogs.fight_cog import Fight_Cog
 from src.Scripts.Discord_Gui_Bot.Cogs.suggsetion_cog import Suggsetion_Cog
 from src.Scripts.Discord_Gui_Bot.Cogs.guild_cog import Guild_Cog
 from docs.conf import PREFIX, TOKEN
@@ -16,7 +17,6 @@ from src.Scripts.Discord_Gui_Bot.Cogs.markt_cog import Market_Trading
 from src.Scripts.Discord_Gui_Bot.Cogs.player_infos_cog import player_infos
 from src.Scripts.Classes.Output_Beautifer.loadbar import LoadBar
 #from src.Scripts.Discord_Gui_Bot.Cogs.test_cog import test
-
 
 
 intents = nextcord.Intents.all()
@@ -49,6 +49,7 @@ def run_bot():
     bot.add_cog(Guild_Cog(bot))
     lb.write(9/9*100) 
     bot.add_cog(Suggsetion_Cog(bot))
+    bot.add_cog(Fight_Cog(bot))
     bot.run(TOKEN)
 
 def restart():
