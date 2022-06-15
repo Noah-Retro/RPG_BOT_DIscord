@@ -1,6 +1,7 @@
 from typing import Coroutine
 from nextcord import ChannelType
 import nextcord
+from src.Scripts.Classes.Assets_loader.asset_loader import Asset_Loader
 from src.Scripts.Classes.Character.player import Player
 
 from src.Scripts.Classes.Fireteam.base_fireteam import Base_Fireteam
@@ -30,10 +31,15 @@ class Fireteam_View(nextcord.ui.View):
 
     @nextcord.ui.button(label="start fight")
     async def startb(self,button,interaction:nextcord.Interaction):
+        #set fight of fireteam
+        al = Asset_Loader()
+        if self.ft.fight == None:
+            #Make it random
+            self.ft.fight=al.load_fight("Test Fight")
+            
         #Send fight embed and Fight view
         test = await interaction.channel.create_thread(name=f"Fireteam thread from: {self.ft.players[0].name}",auto_archive_duration=60,type=ChannelType.public_thread)
         await test.send("place fight embed here!",view=Fight_View(self.ft))
-        pass
 
 
 
@@ -59,7 +65,7 @@ class Fight_Attack_Button(nextcord.ui.Button):
         for player in self.ft.players:
             if player.name==str(interaction.user):
                 player.next_move="attack"
-        await interaction.send(Enemy_Select_View(self.ft,interaction.edit),ephemeral=True)
+        await interaction.send(content="Wähle einen Gegner aus",view=Enemy_Select_View(self.ft,interaction.edit),ephemeral=True)
 
 class Fight_Spell_Button(nextcord.ui.Button):
     def __init__(self,ft:Base_Fireteam):
@@ -67,8 +73,6 @@ class Fight_Spell_Button(nextcord.ui.Button):
         self.ft=ft
 
     async def callback(self, interaction: nextcord.Interaction):
-        db = DB()
-        player=db.load_player(str(interaction.user))
         await interaction.send("Chose a spell",view=Spell_View(ft = self.ft,coro=interaction.edit),ephemeral=True)
 
     
@@ -88,5 +92,19 @@ class Enemy_Select_View(nextcord.ui.View):
 
 class Enemy_Select(nextcord.ui.Select):
     def __init__(self,ft:Base_Fireteam,coro:Coroutine) -> None:
-        super().__init__(playceholder="Wähle eine Ziel aus")
+        super().__init__(placeholder="Wähle ein Ziel aus")
+        self.coro=coro
+        self.ft = ft
+        al = Asset_Loader()
+        i= 0
+        for e in ft.fight.enemys:
+            self.add_option(label=f"{e}:{i}",value=f"{e}:{i}")
+            i+=1
+        
+    async def callback(self, interaction: nextcord.Interaction):
+        for p in self.ft.players:
+            if p.name==str(interaction.user):
+                p.next_move+=self.values[0]
+        await self.coro(view=Fight_View(self.ft))
+
         

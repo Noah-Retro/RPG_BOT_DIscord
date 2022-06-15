@@ -1,0 +1,14 @@
+{
+    "Fight":[
+        {
+            "name":"Test Fight",
+            "level":1,
+            "enemys":[
+                "Zombie",
+                "Zombie"
+                
+            ],
+            "exp":200
+        }
+    ]
+}

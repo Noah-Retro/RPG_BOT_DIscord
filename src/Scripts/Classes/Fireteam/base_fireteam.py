@@ -3,6 +3,7 @@ from typing import Any, List
 
 from nextcord import Embed
 import nextcord
+from src.Scripts.Classes.Fight.fight import Fight
 from src.Scripts.Classes.Activity.activity import Activity
 from src.Scripts.Classes.HealthBar.healthbar import HelthBar
 from src.Scripts.Classes.Character.player import Player
@@ -14,11 +15,11 @@ class Base_Fireteam():
     Fireteam to be used in an battle 
     The bufs count for the entire fireteam
     '''
-    players:List[Any]=None
+    players:List[Player]=None
     bufs:List[Any]=None
     base_level:int=0
     max_players:int=6
-    fight:Any=None
+    fight:Fight=None
     activity:Activity=None
 
 

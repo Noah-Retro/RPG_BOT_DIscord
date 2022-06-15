@@ -8,6 +8,9 @@ spelltypes = single,multy
     single one target
     multy == Fireteam or Enemys
 
+Fight view
+    if no fight name is given make it random
+
 Bug 
 
     Player Inventory View

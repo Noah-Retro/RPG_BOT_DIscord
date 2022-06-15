@@ -2,6 +2,7 @@ import glob
 import json
 import os
 
+from src.Scripts.Classes.Fight.fight import Fight
 from src.Scripts.Classes.Bounty.bounty import Bounty
 from src.Scripts.Classes.Enemy.enemy import Enemy
 from src.Scripts.Classes.Items.Armors import *
@@ -23,12 +24,11 @@ MARKET_PATH = "src\\Assets\\Markets\\markets.json"
 GUILD_PATH = "src\\Assets\\Guild\\rewards.json"
 WORK_PATH="src\\Assets\\Work\\work.json"
 ENEMY_PATH="src\\Assets\\Enemys\\enemys.json"
+FIGHT_PATH="src\\Assets\\Fights\\fights.json"
 
 class Asset_Loader():
     '''
     This class is used to load all assets in the json files
-    
-
     '''
 
     def load_item(self,name:str,quantity:int=None):
@@ -237,6 +237,23 @@ class Asset_Loader():
                 return j
 
     def load_enemy(self,name):
-        pass
+        with open(ENEMY_PATH,encoding="utf-8") as text:
+            data = json.load(text)
+            for k, vals in data.items():
+                for v in vals:
+                    i = globals()[k](**v)
+                    if i.name == name:
+                        return i
+        return None
+
+    def load_fight(self,name):
+        with open(FIGHT_PATH,encoding="utf-8") as text:
+            data = json.load(text)
+            for k, vals in data.items():
+                for v in vals:
+                    i = globals()[k](**v)
+                    if i.name == name:
+                        return i
+        return None
 
 

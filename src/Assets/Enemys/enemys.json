@@ -1,5 +1,5 @@
 {
-    "Enemys":[
+    "Enemy":[
         {
             "name":"Zombie",
             "level":10,
