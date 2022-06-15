@@ -43,7 +43,13 @@ CURRENT_CHANGELOGG=[
         "body":"""Rezepte werden jetzt mit einem Slash command aufgerufen. Unter /Book kannst du dan die verschiedenen Bücher aufschlagen."""
     },{
         "title":"**Change Character precense**",
-        "body":"**You can now edit your character and choss a color for your Inventory**"
+        "body":"**You can now edit your character and chosse a color for your Inventory**"
+    },{
+        "title":"**First Fight mechanics are here!**",
+        "body":"You can now try out the fight mechanics with '/fight start' wich will give you a random fight!"
+    },{
+        "title":"**Raid and Dungeons**",
+        "body":"Raids and Dungeon follow in one ore two updates, don't worry. Raids will be linear and challanging, while dungeons are ment to be explored."
     }
 ]
 [

@@ -247,12 +247,16 @@ class Asset_Loader():
         return None
 
     def load_fight(self,name):
+        el=[]
         with open(FIGHT_PATH,encoding="utf-8") as text:
             data = json.load(text)
             for k, vals in data.items():
                 for v in vals:
                     i = globals()[k](**v)
                     if i.name == name:
+                        for e in i.enemys:
+                            el.append(self.load_enemy(e))
+                        i.enemys=el
                         return i
         return None
 

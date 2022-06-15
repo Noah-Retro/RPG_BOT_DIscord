@@ -6,6 +6,7 @@ from typing import Any, List
 class Enemy:
     name:str
     level:int
+    health:int
     atk:int
     _def:int
     weapon:Any

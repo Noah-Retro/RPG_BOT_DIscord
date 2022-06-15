@@ -8,9 +8,12 @@ class HelthBar:
         full = is_health/(max_health/length)
         r = ""
         r+="▄"*int(full)
+        if full <0:
+            r="▁"*length
+            return r
         rest=length-int(full)
         r+="▁"*rest
         return r  
 
 if __name__ == '__main__':
-    print(HelthBar.healthbar(334,333))
+    print(HelthBar.healthbar(334,-100))

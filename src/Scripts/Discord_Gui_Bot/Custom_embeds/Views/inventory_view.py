@@ -429,7 +429,7 @@ class Inventory_Select(nextcord.ui.Select):
         self.items=[]
         self.Interface = DB()
         super().__init__(custom_id=f"Inventory:Embed:{p.name}", placeholder="Dein Inventar", min_values=1, max_values=1, options=self.items, disabled=False, row=None)
-        if p.items == None:
+        if p.items == None or p.items ==[]:
             self.add_option(label="Keine Items vorhanden.")
             return
         for i in p.items:

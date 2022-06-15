@@ -3,6 +3,7 @@
         {
             "name":"Zombie",
             "level":10,
+            "health":10,
             "atk":10,
             "_def":10,
             "weapon":{
@@ -16,7 +17,7 @@
             "drop":[
                 {
                     "item":"Apfel",
-                    "dropchance":0.1
+                    "dropchance":1
                 },
                 {
                     "item":"Eisen",

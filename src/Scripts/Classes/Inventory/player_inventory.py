@@ -1,6 +1,7 @@
 import dataclasses
 from random import random
 from typing import Any, List
+from src.Scripts.Classes.Moves.base_spell import Spell
 
 from src.Scripts.Classes.Bounty.bounty import Bounty
 from src.Scripts.Classes.Inventory.base_inventory import Base_Inventory
@@ -22,7 +23,8 @@ class Player_Inventory(Base_Inventory):
     weapon:Any=None
     armor:Any=None
     artefact:Artefact=None
-    
+    spells:List[Spell]=None
+
     def craft_item(self,recepie:Base_Recepie):
         '''
         craft_item(recepie:Base_Recepie->Bool

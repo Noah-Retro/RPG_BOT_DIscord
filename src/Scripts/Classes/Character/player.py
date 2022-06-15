@@ -24,7 +24,7 @@ class Player(Informations,Player_Inventory,Stat,Damagable):
     stamina_used:int=0
     fireteam:Any=None
     moves:List[Any]=None
-    next_move:Any=None
+    next_move:str=None
     poststelle:List[Base_Item]=None
     
     def craft_item(self, recepie: Base_Recepie):
