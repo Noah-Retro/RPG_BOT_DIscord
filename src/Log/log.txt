@@ -15324,3 +15324,4 @@ INFO:root:('Bot ist disconnected von Discord',)
 INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
 INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-v9fk",{"micros":83227,"calls":["discord-sessions-green-prd-2-70",{"micros":82329,"calls":["start_session",{"micros":60270,"calls":["discord-api-7f566bfbf7-68rfm",{"micros":55689,"calls":["get_user",{"micros":17632},"add_authorized_ip",{"micros":1492},"get_guilds",{"micros":5478},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":3295,"calls":[]}]}]}] (Session ID: 9155b98411c2ea19ed5a464c4e4974eb).
 INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
