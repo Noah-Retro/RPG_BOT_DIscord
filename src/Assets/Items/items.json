@@ -68,7 +68,15 @@
             "description":"Ein einfaches Schwert",
             "atk":5,
             "img":""
+        },{
+            "name":"Excalibur",
+            "value":0.0,
+            "description":"Excalibur ist einfach ein schwert",
+            "atk":5000,
+            "img":""
         }
+        
+        
     ],
     "Artefact":[
         {

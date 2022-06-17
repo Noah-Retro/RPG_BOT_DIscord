@@ -60,6 +60,7 @@ class character(commands.Cog):
                 age=_alter,
                 height=_grösse,
                 specials=_besonderheiten,
+                color=0
                 )
 
         

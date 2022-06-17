@@ -14666,3 +14666,661 @@ INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
 INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-bw12",{"micros":63468,"calls":["discord-sessions-green-prd-2-32",{"micros":59744,"calls":["start_session",{"micros":37539,"calls":["discord-api-d887bb4d9-g2k6b",{"micros":31945,"calls":["get_user",{"micros":7079},"add_authorized_ip",{"micros":1598},"get_guilds",{"micros":3043},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":0,"calls":[]}]}]}] (Session ID: 7868ab2f222ec1c6a12c68404de4b5e7).
 INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
 INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 8 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-jt2m",{"micros":149464,"calls":["discord-sessions-green-prd-2-21",{"micros":143998,"calls":["start_session",{"micros":110341,"calls":["discord-api-d887bb4d9-kj49s",{"micros":104230,"calls":["get_user",{"micros":21957},"add_authorized_ip",{"micros":4609},"get_guilds",{"micros":28982},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":32789,"calls":[]}]}]}] (Session ID: 774343d912eb3b28d0d76ad65f264ece).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 8 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-bnhv",{"micros":198179,"calls":["discord-sessions-green-prd-2-142",{"micros":197335,"calls":["start_session",{"micros":175440,"calls":["discord-api-d887bb4d9-tbsd8",{"micros":168035,"calls":["get_user",{"micros":30743},"add_authorized_ip",{"micros":11259},"get_guilds",{"micros":19946},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":20715,"calls":[]}]}]}] (Session ID: 93cff539571b981948d4c94f72c8fb0d).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 0.71s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 2.06s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 0.15s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 2.44s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-xjpg",{"micros":194160,"calls":["discord-sessions-green-prd-2-37",{"micros":192889,"calls":["start_session",{"micros":139060,"calls":["discord-api-7f87855f5f-gdsrb",{"micros":131212,"calls":["get_user",{"micros":13013},"add_authorized_ip",{"micros":5667},"get_guilds",{"micros":18993},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 1d5aa27133e08ff46b91a54787eb5fab).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+CRITICAL:root:("Spieler gingerwithissues#0219:None konnte nicht geladen werden \nFehler im Inerface Load_Character: 'NoneType' object is not subscriptable",)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now create_character
+CRITICAL:root:("Spieler gingerwithissues#0219:None konnte nicht geladen werden \nFehler im Inerface Load_Character: 'NoneType' object is not subscriptable",)
+INFO:root:('Spieler gingerwithissues#0219 wurde erstellt',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now give_item
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:root:('gingerwithissues#0219 hat 1xExcalibur bekommen von Retro#5636',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now give_item
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Retro#5636 hat 1xSchwert bekommen von Retro#5636',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now give_item
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Retro#5636 hat 1xExcalibur bekommen von Retro#5636',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 12 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-l542",{"micros":117435,"calls":["discord-sessions-green-prd-2-55",{"micros":116422,"calls":["start_session",{"micros":89827,"calls":["discord-api-7f87855f5f-fcgsn",{"micros":81029,"calls":["get_user",{"micros":18674},"add_authorized_ip",{"micros":3777},"get_guilds",{"micros":10992},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":15795,"calls":[]}]}]}] (Session ID: ce758ff4e8637d1c70268ef02393d207).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now crafting
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 7 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-nx1p",{"micros":139450,"calls":["discord-sessions-green-prd-2-125",{"micros":138603,"calls":["start_session",{"micros":126002,"calls":["discord-api-7f87855f5f-kl6gq",{"micros":119968,"calls":["get_user",{"micros":21858},"add_authorized_ip",{"micros":15444},"get_guilds",{"micros":22447},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":863,"calls":[]}]}]}] (Session ID: cfbf406ace6e9962cd1725c9556dc5f4).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 9 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-kl1r",{"micros":154416,"calls":["discord-sessions-green-prd-2-121",{"micros":151989,"calls":["start_session",{"micros":124115,"calls":["discord-api-7f87855f5f-2rhs9",{"micros":115802,"calls":["get_user",{"micros":32323},"add_authorized_ip",{"micros":1624},"get_guilds",{"micros":7607},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":4585,"calls":[]}]}]}] (Session ID: 951d3bf5921eef27431cd9493e36d07b).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 3 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-4mg3",{"micros":123531,"calls":["discord-sessions-green-prd-2-131",{"micros":121790,"calls":["start_session",{"micros":100831,"calls":["discord-api-7f87855f5f-49qpz",{"micros":92123,"calls":["get_user",{"micros":12325},"add_authorized_ip",{"micros":13251},"get_guilds",{"micros":19433},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: ff7675234e60a8cb57ad46c3aec4d849).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 3 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-3bcl",{"micros":87698,"calls":["discord-sessions-green-prd-2-93",{"micros":85460,"calls":["start_session",{"micros":58326,"calls":["discord-api-7f87855f5f-dhdvf",{"micros":53370,"calls":["get_user",{"micros":8155},"add_authorized_ip",{"micros":1521},"get_guilds",{"micros":24643},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":8454,"calls":[]}]}]}] (Session ID: f0bdd55eba36b53efd69a281b55357b4).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+WARNING:nextcord.gateway:Shard ID None has stopped responding to the gateway. Closing and restarting.
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-v9fk",{"micros":115192,"calls":["discord-sessions-green-prd-2-33",{"micros":113482,"calls":["start_session",{"micros":86006,"calls":["discord-api-7f87855f5f-cr254",{"micros":82299,"calls":["get_user",{"micros":13362},"add_authorized_ip",{"micros":3008},"get_guilds",{"micros":9546},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14543,"calls":[]}]}]}] (Session ID: 67426c10218aa4ead88a2cf99de1007e).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 3 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-hdvj",{"micros":80995,"calls":["discord-sessions-green-prd-2-1",{"micros":79346,"calls":["start_session",{"micros":31235,"calls":["discord-api-7f87855f5f-dw4jf",{"micros":27293,"calls":["get_user",{"micros":6171},"add_authorized_ip",{"micros":1237},"get_guilds",{"micros":4276},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":25010,"calls":[]}]}]}] (Session ID: 7836627143e05745d795f1cad8487dfe).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now remove_item
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Retro#5636 wurde 1xExcalibur von Retro#5636 weggenommen',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now give_item
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Retro#5636 hat 1xExcalibur bekommen von Retro#5636',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:Received signal to terminate bot and event loop.
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 5 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-5h75",{"micros":98093,"calls":["discord-sessions-green-prd-2-86",{"micros":96763,"calls":["start_session",{"micros":53086,"calls":["discord-api-7f87855f5f-szg8k",{"micros":47702,"calls":["get_user",{"micros":9470},"add_authorized_ip",{"micros":1731},"get_guilds",{"micros":3633},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: a82391ee93a2108f3d0f793336408014).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now player
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:root:('Ein Spieler gingerwithissues#0219 wurde gespeichert',)
+INFO:nextcord.client:nextcord.Client: Found an interaction command.
+INFO:nextcord.client:nextcord.Client: Calling your application command now fight
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 1.69s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None has successfully RESUMED session a82391ee93a2108f3d0f793336408014 under trace ["gateway-prd-main-n3w4",{"micros":1004,"calls":["discord-sessions-green-prd-2-86",{"micros":22}]}].
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 0.01s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 3.66s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 1.96s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 2.78s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 2.35s
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\client.py", line 599, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 481, in wait_for
+    return fut.result()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\gateway.py", line 308, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 1911, in get_gateway
+    data = await self.request(Route('GET', '/gateway'))
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\nextcord\http.py", line 275, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\AAGSNo\AppData\Local\Programs\Python\Python39\lib\site-packages\aiohttp\connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-v9fk",{"micros":83227,"calls":["discord-sessions-green-prd-2-70",{"micros":82329,"calls":["start_session",{"micros":60270,"calls":["discord-api-7f566bfbf7-68rfm",{"micros":55689,"calls":["get_user",{"micros":17632},"add_authorized_ip",{"micros":1492},"get_guilds",{"micros":5478},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":3295,"calls":[]}]}]}] (Session ID: 9155b98411c2ea19ed5a464c4e4974eb).
+INFO:nextcord.client:nextcord.Client: Rolling out commands to guild Server von Retro|879020821174169640

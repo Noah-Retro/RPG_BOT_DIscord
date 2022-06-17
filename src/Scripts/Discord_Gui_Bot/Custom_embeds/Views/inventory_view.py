@@ -433,13 +433,14 @@ class Inventory_Select(nextcord.ui.Select):
             self.add_option(label="Keine Items vorhanden.")
             return
         for i in p.items:
-            self.items.append(nextcord.SelectOption(label=f"{i.name}x{i.quantity}",description=i.description))
+            self.items.append(nextcord.SelectOption(label=f"{i.name}:{i.quantity}",description=i.description))
             
     
     async def callback(self, interaction: nextcord.Interaction):
         ph=self.Interface.load_player(str(interaction.user))
         for i in ph.items:
-            if str(i.name) == str(self.values[0].split("x")[0]):
+            print(i,self.values)
+            if str(i.name) == str(self.values[0].split(":")[0]):
                 e,r= item_embed(i)
                 II = Item_Inventory_Detail_View(i,ph)
                 if type(i)!= Potion:
@@ -450,11 +451,13 @@ class Inventory_Select(nextcord.ui.Select):
                     II.remove_item(II.children[4])
                 if type(i)!= Armor:
                     II.remove_item((II.children[3]))
+                print(II.to_components())
                 if r==True:
                     return await interaction.send(embed=e,view=II,ephemeral=True)
                 else: 
                     II.remove_item(II.children[0])
                     return await interaction.send(embed=e,view=II,ephemeral=True)
+                
         
 class Inventory_Trade_Select(nextcord.ui.Select):    
     def __init__(self,p:Player) -> None:

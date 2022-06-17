@@ -8,14 +8,11 @@ spelltypes = single,multy
     single one target
     multy == Fireteam or Enemys
 
-Fight view
-    if no fight name is given make it random
-
 Bug 
 
     Player Inventory View
         Loading the Player new insted of passing it through
-    Base Aarmor Weapon
+    Base Aarmor Weapon Spell for each class
     Item bei Market kaufen
     Bounty sammeln
 
@@ -57,7 +54,6 @@ upgrade Weapons
     ka some special item to upgrade
 
 Fight mechanics
-    25 attacks can be equiped
     25 spells can be equiped
     items from inventory can be used
     MAKE THE FUCKING VISUALS FOR THE FUCKING FIGHT MECHANIKS
@@ -76,7 +72,6 @@ custom help commands
     command help
     geting started
     Write custom info for commands and cogs
-
 
 Marrieges
     player can marry

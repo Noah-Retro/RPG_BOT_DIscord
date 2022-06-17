@@ -10,7 +10,7 @@ from src.Scripts.Classes.Database.db import DB
 
 class Fight_Embed(nextcord.Embed):
     def __init__(self,ft:Base_Fireteam):
-        super().__init__(colour=ft.players[0].color)
+        super().__init__(colour=ft.players[0].color if ft.players[0].color != None else 0)
         for i in ft.players:
             self.add_field(name = i.name,value=f"""
                 {HelthBar.healthbar(i.health-i.damage,i.health)} Helath
@@ -114,7 +114,7 @@ class Spell_View(nextcord.ui.View):
         self.add_item(Spell_Select(ft,coro,player_name))
     #add spell move to player
     #send enemy select view ephemeral = true
-    pass
+    
 
 class Spell_Select(nextcord.ui.Select):
     def __init__(self,ft:Base_Fireteam,coro:Coroutine,player_name:str) -> None:
@@ -136,7 +136,7 @@ class Spell_Select(nextcord.ui.Select):
             await interaction.send(content="Wähle ein Ziel aus",view=Enemy_Select_View(self.ft,self.coro,singel=True),ephemeral=True)
             return
         await interaction.send(content="Wähle einen Gegner aus",view=Enemy_Select_View(self.ft,self.coro),ephemeral=True)
-        await interaction.message.delete()
+        
 
 class Enemy_Select_View(nextcord.ui.View):
     def __init__(self,ft:Base_Fireteam,coro:Coroutine):
@@ -166,5 +166,5 @@ class Enemy_Select(nextcord.ui.Select):
             if p.name==str(interaction.user):
                 p.next_move+=self.values[0]
         await self.coro(embed=Fight_Embed(self.ft),view=Fight_View(self.ft))
-        await interaction.message.delete()
+        self.disabled= True
         
