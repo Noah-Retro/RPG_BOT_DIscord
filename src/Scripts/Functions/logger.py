@@ -1,9 +1,11 @@
 import logging
-
+import platform
 
 def log(num,*args):
-    
-    logging.basicConfig(encoding="utf-8",level=logging.INFO,filename=r"src\Log\log.txt")
+    if platform.system() == "Windows":
+        logging.basicConfig(encoding="utf-8",level=logging.INFO,filename=r"src\Log\log.txt")
+    else:
+        logging.basicConfig(encoding="utf-8",level=logging.INFO,filename="src/Log/log.txt")
     """
     log(num,*args)
 
