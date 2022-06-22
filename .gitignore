@@ -1,5 +1,6 @@
-__pycache__/
-*.py[cod]
-*$py.class
-*.cpython
-*.pyc
+__pycache__
+.py[cod]
+$py.class
+.cpython
+.pyc
+.cpython-39.pyc

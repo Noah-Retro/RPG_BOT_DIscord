@@ -2,3 +2,580 @@ INFO:nextcord.client:Cleaning up tasks.
 INFO:nextcord.client:Cleaning up after 2 tasks.
 INFO:nextcord.client:All tasks finished cancelling.
 INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-gncr",{"micros":237582,"calls":["discord-sessions-green-prd-2-109",{"micros":234602,"calls":["start_session",{"micros":178422,"calls":["discord-api-5c5b946f98-txkml",{"micros":166423,"calls":["get_user",{"micros":20278},"add_authorized_ip",{"micros":14212},"get_guilds",{"micros":15123},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: b77648caea7f62d0bf692a8c6fd5b9b5).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-ffkz",{"micros":175033,"calls":["discord-sessions-green-prd-2-84",{"micros":173646,"calls":["start_session",{"micros":105430,"calls":["discord-api-5c5b946f98-4cflt",{"micros":100146,"calls":["get_user",{"micros":24776},"add_authorized_ip",{"micros":4604},"get_guilds",{"micros":12837},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":47516,"calls":[]}]}]}] (Session ID: 40bccfdcb6636670cb79ad7c59494077).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-xd6v",{"micros":118282,"calls":["discord-sessions-green-prd-2-79",{"micros":117325,"calls":["start_session",{"micros":95508,"calls":["discord-api-5c5b946f98-78qcm",{"micros":89235,"calls":["get_user",{"micros":15664},"add_authorized_ip",{"micros":6863},"get_guilds",{"micros":8148},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":19,"calls":[]},"presence_connect",{"micros":4910,"calls":[]}]}]}] (Session ID: d7d47638bf6d59f31dec11e740cd8c03).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-h93c",{"micros":101027,"calls":["discord-sessions-green-prd-2-65",{"micros":100023,"calls":["start_session",{"micros":86882,"calls":["discord-api-5c5b946f98-2858z",{"micros":75470,"calls":["get_user",{"micros":18314},"add_authorized_ip",{"micros":2542},"get_guilds",{"micros":9218},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":7485,"calls":[]}]}]}] (Session ID: 08a4002c34d61de05160d954fbffb132).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with 1000, cannot reconnect.
+ERROR:nextcord.client:Attempting a reconnect in 0.50s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 644, in connect
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 641, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None has successfully RESUMED session 08a4002c34d61de05160d954fbffb132 under trace ["gateway-prd-main-2b61",{"micros":702,"calls":["discord-sessions-green-prd-2-65",{"micros":18}]}].
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-dmt9",{"micros":259450,"calls":["discord-sessions-green-prd-2-132",{"micros":257999,"calls":["start_session",{"micros":241520,"calls":["discord-api-5c5b946f98-x8bh6",{"micros":231980,"calls":["get_user",{"micros":38564},"add_authorized_ip",{"micros":23253},"get_guilds",{"micros":27209},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":12883,"calls":[]}]}]}] (Session ID: 1ab8845920aa21ad366a6f010a1a5fd4).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-24dg",{"micros":115989,"calls":["discord-sessions-green-prd-2-114",{"micros":109569,"calls":["start_session",{"micros":42130,"calls":["discord-api-5c5b946f98-kdzht",{"micros":36898,"calls":["get_user",{"micros":7408},"add_authorized_ip",{"micros":1364},"get_guilds",{"micros":3560},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":12203,"calls":[]}]}]}] (Session ID: e703583721406efd12be4a6d51d6de26).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-284s",{"micros":108940,"calls":["discord-sessions-green-prd-2-73",{"micros":107457,"calls":["start_session",{"micros":45048,"calls":["discord-api-5c5b946f98-lr95c",{"micros":39635,"calls":["get_user",{"micros":9469},"add_authorized_ip",{"micros":3467},"get_guilds",{"micros":3815},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: e080a2133779748df0e618ea14bf2ddf).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-h8kp",{"micros":124617,"calls":["discord-sessions-green-prd-2-47",{"micros":117867,"calls":["start_session",{"micros":84128,"calls":["discord-api-5c5b946f98-7w6dt",{"micros":73392,"calls":["get_user",{"micros":16430},"add_authorized_ip",{"micros":2280},"get_guilds",{"micros":12572},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":32537,"calls":[]}]}]}] (Session ID: 48d7462e152b86e824be6bd16e3b789b).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-94mf",{"micros":108932,"calls":["discord-sessions-green-prd-2-28",{"micros":107587,"calls":["start_session",{"micros":67618,"calls":["discord-api-78d69655dd-q2w4q",{"micros":63574,"calls":["get_user",{"micros":18308},"add_authorized_ip",{"micros":2574},"get_guilds",{"micros":14183},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: f4882146088197dcb79e8ce417952aaf).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+ERROR:nextcord.state:Error registering command SlashApplicationCommand market <function Market_Trading.Market at 0x7fa63a99c310>: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 1.44s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 641, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 355, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 2215, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 295, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 1.65s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 641, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 355, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 2215, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 295, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 13.93s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 641, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 355, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 2215, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 295, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 10.48s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 641, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 355, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 2215, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 295, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 23.26s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 641, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 355, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 2215, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 295, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.client:Attempting a reconnect in 57.78s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 641, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 355, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 2215, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 295, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-07nn",{"micros":84191,"calls":["discord-sessions-green-prd-2-2",{"micros":83493,"calls":["start_session",{"micros":39626,"calls":["discord-api-d574c8474-r4c6d",{"micros":36136,"calls":["get_user",{"micros":7896},"add_authorized_ip",{"micros":1398},"get_guilds",{"micros":7508},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":5087,"calls":[]}]}]}] (Session ID: ac0c33beefa7f0372e807786866dd112).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-022n",{"micros":101030,"calls":["discord-sessions-green-prd-2-114",{"micros":99535,"calls":["start_session",{"micros":89068,"calls":["discord-api-55b85d9f46-284r5",{"micros":80702,"calls":["get_user",{"micros":17936},"add_authorized_ip",{"micros":6904},"get_guilds",{"micros":11161},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 30bb57968135e47e601fc4e3abe3682d).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+ERROR:nextcord.state:Error registering command SlashApplicationCommand fight <function Fight_Cog.fight at 0x7fa63a73bb80>: [Errno 50] Network is down
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-qls6",{"micros":63768,"calls":["discord-sessions-green-prd-2-10",{"micros":62122,"calls":["start_session",{"micros":57659,"calls":["discord-api-55b85d9f46-wl4gb",{"micros":53002,"calls":["get_user",{"micros":9465},"add_authorized_ip",{"micros":2796},"get_guilds",{"micros":5128},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":3649,"calls":[]}]}]}] (Session ID: d6fc171ab62844081ee587bdffff4547).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.gateway:Websocket closed with WSCloseCode.ABNORMAL_CLOSURE, attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-417f",{"micros":116363,"calls":["discord-sessions-green-prd-2-21",{"micros":115483,"calls":["start_session",{"micros":40621,"calls":["discord-api-55b85d9f46-jbnbl",{"micros":36373,"calls":["get_user",{"micros":6763},"add_authorized_ip",{"micros":1625},"get_guilds",{"micros":5353},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":36057,"calls":[]}]}]}] (Session ID: 1bf523e6698729c4da157a3aff0c87b7).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.gateway:Timed out receiving packet. Attempting a reconnect.
+INFO:nextcord.client:Got a request to RESUME the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+ERROR:nextcord.state:Error registering command SlashApplicationCommand guild <function Guild_Cog.guild at 0x7fa63a746e50>: [Errno 65] No route to host
+ERROR:nextcord.client:Attempting a reconnect in 162.86s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 641, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/asyncio/tasks.py", line 481, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 355, in from_client
+    gateway = gateway or await client.http.get_gateway()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 2215, in get_gateway
+    data = await self.request(Route("GET", "/gateway"))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/http.py", line 295, in request
+    async with self.__session.request(method, url, **kwargs) as response:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [nodename nor servname provided, or not known]
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None session has been invalidated.
+INFO:nextcord.client:Got a request to IDENTIFY the websocket.
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-zsdk",{"micros":62568,"calls":["discord-sessions-green-prd-2-27",{"micros":60909,"calls":["start_session",{"micros":48364,"calls":["discord-api-bd8d6df7d-g2dbd",{"micros":44235,"calls":["get_user",{"micros":8883},"add_authorized_ip",{"micros":2266},"get_guilds",{"micros":5635},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":11520,"calls":[]}]}]}] (Session ID: f973d01e7ec9a914a1072ad9ba41dff8).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 2 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-qfv0",{"micros":191508,"calls":["discord-sessions-green-prd-2-109",{"micros":188023,"calls":["start_session",{"micros":137476,"calls":["discord-api-bd8d6df7d-q26rc",{"micros":129963,"calls":["get_user",{"micros":10436},"add_authorized_ip",{"micros":20207},"get_guilds",{"micros":16568},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":16164,"calls":[]}]}]}] (Session ID: c72475c22685d9b0ad13f74879065dcd).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('trade', 1, None)
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 2 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-hdvj",{"micros":66713,"calls":["discord-sessions-green-prd-2-101",{"micros":63151,"calls":["start_session",{"micros":50665,"calls":["discord-api-bd8d6df7d-p8zrv",{"micros":46939,"calls":["get_user",{"micros":10396},"add_authorized_ip",{"micros":2283},"get_guilds",{"micros":7790},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: 72aaa12b3d7812c0961589496dfceb4c).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('trade', 1, None)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)

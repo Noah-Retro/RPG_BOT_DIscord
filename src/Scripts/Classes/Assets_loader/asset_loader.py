@@ -14,17 +14,31 @@ from src.Scripts.Classes.Items.Weapons import *
 from src.Scripts.Classes.Market.base_market import Market
 from src.Scripts.Classes.Trade.trade import Trade
 from src.Scripts.Classes.Work.work import Work
+import platform
 
-ITEMS_PATH="src\\Assets\\Items\\items.json"
-RECEPIE_PATH = "src\\Assets\\Items\\recepies.json"
-CLASS_PATH = "src\\Assets\\Skills\\classes.json"
-RACE_PATH = "src\\Assets\\Skills\\races.json"
-BOUNTY_PATH = "src\\Assets\\Bountys\\bountys.json"
-MARKET_PATH = "src\\Assets\\Markets\\markets.json"
-GUILD_PATH = "src\\Assets\\Guild\\rewards.json"
-WORK_PATH="src\\Assets\\Work\\work.json"
-ENEMY_PATH="src\\Assets\\Enemys\\enemys.json"
-FIGHT_PATH="src\\Assets\\Fights\\fights.json"
+
+if platform.system()=="Windows":
+    ITEMS_PATH="src\\Assets\\Items\\items.json"
+    RECEPIE_PATH = "src\\Assets\\Items\\recepies.json"
+    CLASS_PATH = "src\\Assets\\Skills\\classes.json"
+    RACE_PATH = "src\\Assets\\Skills\\races.json"
+    BOUNTY_PATH = "src\\Assets\\Bountys\\bountys.json"
+    MARKET_PATH = "src\\Assets\\Markets\\markets.json"
+    GUILD_PATH = "src\\Assets\\Guild\\rewards.json"
+    WORK_PATH="src\\Assets\\Work\\work.json"
+    ENEMY_PATH="src\\Assets\\Enemys\\enemys.json"
+    FIGHT_PATH="src\\Assets\\Fights\\fights.json"
+else:
+    ITEMS_PATH="src/Assets/Items/items.json"
+    RECEPIE_PATH = "src/Assets/Items/recepies.json"
+    CLASS_PATH = "src/Assets/Skills/classes.json"
+    RACE_PATH = "src/Assets/Skills/races.json"
+    BOUNTY_PATH = "src/Assets/Bountys/bountys.json"
+    MARKET_PATH = "src/Assets/Markets/markets.json"
+    GUILD_PATH = "src/Assets/Guild/rewards.json"
+    WORK_PATH="src/Assets/Work/work.json"
+    ENEMY_PATH="src/Assets/Enemys/enemys.json"
+    FIGHT_PATH="src/Assets/Fights/fights.json"
 
 class Asset_Loader():
     '''

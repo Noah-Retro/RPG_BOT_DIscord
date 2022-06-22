@@ -103,37 +103,3 @@ from requests import get
         ip = get('https://api.ipify.org').content.decode('utf8')
         print('My public IP address is: {}'.format(ip))
 
-Real life test
------------------------------------------
-crafting Cog
-    craft_item       ✔️
-    show_items       ✔️ 
-    show_rezepie_item✔️
-    show_rezepies    ✔️
-
-Event Cog
-    reload
-
-Gamplay Cog
-    accept_trade    ✔️
-
-    create_trade    ✔️
-    remove_trade    ✔️
-    show_trades     ✔️
-
-    pause_work      ✔️
-    collect_bounty  ✔️
-    work            ✔️
-
-    unequip_armor   ✔️
-    unequip_weapon  ✔️
-    equip_armor     ✔️
-    equip_weapon    ✔️
-
-    use_skill_token ✔️
-
-admin Cog ✔️
-
-character Cog ✔️
-
-player_infos Cog ✔️
