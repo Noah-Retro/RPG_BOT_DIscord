@@ -579,3 +579,90 @@ INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature
 INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
 INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('trade', 1, None)
 INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-fgk6",{"micros":88996,"calls":["id_created",{"micros":718,"calls":[]},"session_lookup_time",{"micros":472,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-blue-prd-2-129",{"micros":86449,"calls":["start_session",{"micros":38367,"calls":["discord-api-6d5b75d7-d9vw8",{"micros":33474,"calls":["get_user",{"micros":9782},"get_guilds",{"micros":4270},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":30,"calls":[]},"presence_started",{"micros":22612,"calls":[]},"guilds_started",{"micros":718,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":24684,"calls":[]},"connect_finished",{"micros":24690,"calls":[]},"build_ready",{"micros":28,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 75f699d723c3baea19f70102472cbacf).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('trade', 1, None)
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 2 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-1b8x",{"micros":328043,"calls":["id_created",{"micros":991,"calls":[]},"session_lookup_time",{"micros":343,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-blue-prd-2-91",{"micros":326100,"calls":["start_session",{"micros":276671,"calls":["discord-api-d99f788d6-lhz7n",{"micros":252660,"calls":["get_user",{"micros":55788},"get_guilds",{"micros":70652},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":13}]}]},"starting_guild_connect",{"micros":33,"calls":[]},"presence_started",{"micros":3774,"calls":[]},"guilds_started",{"micros":45584,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":1,"calls":[]},"connect_finished",{"micros":6,"calls":[]},"build_ready",{"micros":28,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 656e235c5ec75b040929d7607bcdb681).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('trade', 1, None)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.gateway:Websocket closed with 1000, cannot reconnect.
+ERROR:nextcord.client:Attempting a reconnect in 1.12s
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/client.py", line 644, in connect
+    await self.ws.poll_event()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/nextcord/gateway.py", line 641, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+nextcord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:root:('Bot ist disconnected von Discord',)
+INFO:nextcord.gateway:Shard ID None has sent the RESUME payload.
+INFO:nextcord.gateway:Shard ID None has successfully RESUMED session 656e235c5ec75b040929d7607bcdb681 under trace ["gateway-prd-main-68hw",{"micros":828,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":357,"calls":[]},"session_lookup_finished",{"micros":27,"calls":[]},"discord-sessions-blue-prd-2-91",{"micros":22}]}].
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:root:('Ein Spieler Retro#5636 wurde gespeichert',)
+INFO:nextcord.client:Cleaning up tasks.
+INFO:nextcord.client:Cleaning up after 9 tasks.
+INFO:nextcord.client:All tasks finished cancelling.
+INFO:nextcord.client:Closing the event loop.
+INFO:nextcord.client:logging in using static token
+INFO:nextcord.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:nextcord.gateway:Shard ID None has connected to Gateway: ["gateway-prd-main-r5xd",{"micros":260582,"calls":["id_created",{"micros":1984,"calls":[]},"session_lookup_time",{"micros":853,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-blue-prd-2-95",{"micros":257422,"calls":["start_session",{"micros":209854,"calls":["discord-api-d99f788d6-ddxmm",{"micros":202029,"calls":["get_user",{"micros":27557},"get_guilds",{"micros":22259},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":17359},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":32,"calls":[]},"presence_started",{"micros":12166,"calls":[]},"guilds_started",{"micros":31378,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":3959,"calls":[]},"connect_finished",{"micros":3964,"calls":[]},"build_ready",{"micros":25,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]},"clean_ready",{"micros":0,"calls":[]}]}]}] (Session ID: 88874c374bd67bfd864fef80e539d1b7).
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('create_character', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('guild', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('suggsetion', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('take_damage', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('crafting', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('market', 1, None)
+INFO:root:('Bot has successfully logged in as: OpenRpg#8813', 'Bot ID: 893043103051706378\n')
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('player', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('fight', 1, None)
+INFO:nextcord.state:nextcord.ConnectionState: Registering command with signature ('trade', 1, None)

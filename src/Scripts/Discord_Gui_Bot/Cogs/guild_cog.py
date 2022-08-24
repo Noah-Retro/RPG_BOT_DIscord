@@ -169,8 +169,11 @@ class Guild_Cog(commands.Cog):
     @guild.subcommand(name="show",description="Zeigt deine Guilde")
     async def guild_show(self,interaction:nextcord.Interaction):
         player = self.Interface.load_player(str(interaction.user))
-        guild = self.Interface.load_guild(player.guild)        
-        await interaction.send(embed=guild.embed,ephemeral=False)
+        guild = self.Interface.load_guild(player.guild)   
+        if guild != False:     
+            await interaction.send(embed=guild.embed,ephemeral=False)
+        else:
+            await interaction.send("Du bist noch in keiner Guilde",ephemeral=True)
 
     @guild.subcommand(name="kick")
     async def guild_kick(self,interaction:nextcord.Interaction,playername:nextcord.User):

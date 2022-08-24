@@ -8,13 +8,10 @@ spelltypes = single,multy
     single one target
     multy == Fireteam or Enemys
 
-Bug 
-
-    Player Inventory View
-        Loading the Player new insted of passing it through
-    Base Aarmor Weapon Spell for each class
-    Item bei Market kaufen
-    Bounty sammeln
+Potions
+    Base Potions
+    Player useability
+    Button in fight View
 
 Character
     Edit later

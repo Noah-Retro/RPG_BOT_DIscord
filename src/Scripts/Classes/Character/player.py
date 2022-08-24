@@ -65,18 +65,11 @@ class Player(Informations,Player_Inventory,Stat,Damagable):
     def heal(self,item:Potion):
         if not self.remove_item(item.name,1):
             return False
-        if item.mana <1:
-            self.mana_used -= self.mana * item.mana
-        else:
-            self.mana_used -= item.mana
-        if item.stamina <1:
-            self.stamina_used -= self.stamina * item.stamina
-        else:
-            self.stamina_used -= item.stamina
-        if item.health<1:
-            self.damage -= self.health*item.health
-        else:
-            self.damage -= item.health
+        
+        self.mana_used -= item.mana
+        self.stamina_used -= item.stamina
+        self.damage -= item.health
+        
         if self.damage < 0:
             self.damage = 0
         if self.mana_used <0:
