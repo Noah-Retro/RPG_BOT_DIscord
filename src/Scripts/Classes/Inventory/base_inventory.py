@@ -1,3 +1,4 @@
+from http.client import NON_AUTHORITATIVE_INFORMATION
 from typing import List
 import dataclasses
 from src.Scripts.Classes.Items.base_item import Base_Item
@@ -53,10 +54,13 @@ class Base_Inventory:
         return False
 
     def add_item(self,item:Base_Item):
+        if item == None:
+            return False
+        
         if self.bountys != None:
             for b in self.bountys:
                 b.got_item(item.name,item.quantity)
-        
+    
         if self.items==None:
             self.items=[item]
             return True

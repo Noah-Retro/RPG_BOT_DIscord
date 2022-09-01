@@ -103,9 +103,9 @@
     "Potion":[
         {
             "name":"heal-potion-small",
-            "value":105,
-            "description":"Ein kleiner Trank der 5% deines lebens wieder herstelt",
-            "health":0.05,
+            "value":15,
+            "description":"Ein kleiner Trank der 5 deiner Lebenspunkte wieder herstelt",
+            "health":5,
             "mana":0,
             "stamina":0,
             "img":"https://cdnb.artstation.com/p/assets/images/images/015/880/757/large/valerie-reed-asset.jpg?1550022173"

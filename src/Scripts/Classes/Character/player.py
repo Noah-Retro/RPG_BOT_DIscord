@@ -63,13 +63,15 @@ class Player(Informations,Player_Inventory,Stat,Damagable):
         
 
     def heal(self,item:Potion):
+         
         if not self.remove_item(item.name,1):
+            print("Random Bullshit")
             return False
         
         self.mana_used -= item.mana
         self.stamina_used -= item.stamina
         self.damage -= item.health
-        
+
         if self.damage < 0:
             self.damage = 0
         if self.mana_used <0:

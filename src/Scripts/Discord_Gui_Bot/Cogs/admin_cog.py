@@ -114,3 +114,12 @@ class admin(commands.Cog):
         ph=self.Interface.load_player(str(user))
         ph.receve_damage(Damage("Hey",10,False))
         self.Interface.store_player(ph)
+        await ctx.send(f"{user} hat 10 damage genommen",ephemeral=True)
+
+    @commands.is_owner()
+    @slash_command()
+    async def del_all_guilds(self,interaction:nextcord.Interaction):
+        db = DB()
+        db.cur.execute("DELETE FROM guild")
+        db.con.commit()
+        await interaction.send("All guilds were deleted")

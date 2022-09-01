@@ -19,7 +19,7 @@ class Events(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        await self.bot.change_presence(activity=nextcord.Game(name=f"{PREFIX}help"))
+        await self.bot.change_presence(activity=nextcord.Game(name="/help"))
         print("Bot has successfully logged in as: {}".format(self.bot.user))
         print("Bot ID: {}\n".format(self.bot.user.id))
         log(1,"Bot has successfully logged in as: {}".format(self.bot.user),"Bot ID: {}\n".format(self.bot.user.id))

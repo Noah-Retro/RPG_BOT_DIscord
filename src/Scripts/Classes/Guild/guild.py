@@ -59,6 +59,8 @@ class Guild:
 
     @property
     def embed(self)->nextcord.Embed:
+        print(self)
+        
         e = nextcord.Embed(title=self.name,color=int(self.color) if self.color != None else 0)
         e.set_thumbnail(url=self.emblem)
         e.set_image(url=self.house)

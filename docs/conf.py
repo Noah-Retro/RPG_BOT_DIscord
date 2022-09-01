@@ -15,6 +15,5 @@ ASSET_PATH = "src\Assets" #Can be changed to an other folder. The folder has to 
 TOKEN = "ODkzMDQzMTAzMDUxNzA2Mzc4.GjWvqr.7iHCO3weETwTp3_Xl4FxHF-fwNBsIZupdYhbj0" #Discord Bot Token
 
 #Bot interactions
-PREFIX='!'
 GAME='RPG'
 nextcord.version_info='alpha'

@@ -232,11 +232,11 @@ class Use_Item_Button(nextcord.ui.Button):
         ph=self.Interface.load_player(str(interaction.user))
         if ph.heal(self.i):
             self.i.quantity -=1
-            await interaction.edit(embed=character_embed(interaction,ph),view=Inventory_View(ph))
+            await interaction.send(embed=character_embed(interaction,ph),view=Inventory_View(ph))
             if self.i.quantity >0:
-                await interaction.edit(embed=item_embed(self.i)[0])
+                await interaction.send(embed=item_embed(self.i)[0])
             else:
-                await interaction.edit(content="Kein Item mehr vorhanden",embed=None,view=None)#content="Du hast keines dieses Item im Inventar",embed=None,view=None)
+                await interaction.send(content="Kein Item mehr vorhanden",ephemeral=True)#content="Du hast keines dieses Item im Inventar",embed=None,view=None)
             self.Interface.store_player(ph)
             return
         
@@ -412,7 +412,7 @@ class Stop_Work_Button(nextcord.ui.Button):
         rew = str(rew)
         await interaction.edit(embed=character_embed(interaction,player),view=Inventory_View(player))
 
-        if len(rew)<100:
+        if len(rew)>100:
             await interaction.send("Du hast viele Items gesammelt! Zu viele zum anzeigen schaue in dein Inventar.",ephemeral=True)
             return
         await interaction.send(f"Stoped working and got these rewards: {rew}",ephemeral=True)
@@ -439,7 +439,6 @@ class Inventory_Select(nextcord.ui.Select):
     async def callback(self, interaction: nextcord.Interaction):
         ph=self.Interface.load_player(str(interaction.user))
         for i in ph.items:
-            print(i,self.values)
             if str(i.name) == str(self.values[0].split(":")[0]):
                 e,r= item_embed(i)
                 II = Item_Inventory_Detail_View(i,ph)
@@ -451,7 +450,6 @@ class Inventory_Select(nextcord.ui.Select):
                     II.remove_item(II.children[4])
                 if type(i)!= Armor:
                     II.remove_item((II.children[3]))
-                print(II.to_components())
                 if r==True:
                     return await interaction.send(embed=e,view=II,ephemeral=True)
                 else: 

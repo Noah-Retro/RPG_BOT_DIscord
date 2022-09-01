@@ -208,12 +208,49 @@ class Guild_Cog(commands.Cog):
             guild.add_player(f"Player#02{i}")
         self.Interface.store_guild(guild)
 
-    @guild.subcommand(name="change_color",description="Änder die farbe für deine Guilde")
+    @guild.subcommand(name="change")
+    async def change(self,interaction):
+        pass
+
+    @change.subcommand(name="color",description="Änder die Farbe für deine Guilde")
     async def change_color(self,interaction:nextcord.Interaction,
     color=SlashOption(choices=ColorsOptions)):
         ec = nextcord.Color(0)
         player = self.Interface.load_player(str(interaction.user))
         guild= self.Interface.load_guild(player.guild)
+        if guild.leader != player.name:
+            await interaction.send("Du bist nicht Anführer der Guilde")
+            return
+        #Hier bezahlung einfühgen bzw. Abrechnung mit ingame Währung
         guild.color=ec.__getattribute__(color)()
+        guild.color = guild.color.value
         self.Interface.store_guild(guild)
         await interaction.send(embed=guild.embed,ephemeral=True)
+
+    @change.subcommand(name="emblem",description="Ändere das Emblem deiner Guilde")
+    async def change_emblem(self,interaction:nextcord.Interaction,
+    emblem=SlashOption(name="emblem_url",description="URL zum emblem")):
+        player = self.Interface.load_player(str(interaction.user))
+        guild= self.Interface.load_guild(player.guild)
+        if guild.leader != player.name:
+            await interaction.send("Du bist nicht Anführer der Guilde")
+            return
+        #Hier bezahlung einfühgen bzw. Abrechnung mit ingame Währung
+        guild.emblem=emblem
+        self.Interface.store_guild(guild)
+        await interaction.send(embed=guild.embed,ephemeral=True)
+
+    @change.subcommand(name="image",description="Ändere das Bild deiner Guilde")
+    async def change_image(self,interaction:nextcord.Interaction,
+    image=SlashOption(name="image",description="URL zu dem gewünschten Bild")):
+        player = self.Interface.load_player(str(interaction.user))
+        guild= self.Interface.load_guild(player.guild)
+        if guild.leader != player.name:
+            await interaction.send("Du bist nicht Anführer der Guilde")
+            return
+        #Hier bezahlung einfühgen bzw. Abrechnung mit ingame Währung
+        guild.house=image
+        self.Interface.store_guild(guild)
+        await interaction.send(embed=guild.embed,ephemeral=True)
+
+    

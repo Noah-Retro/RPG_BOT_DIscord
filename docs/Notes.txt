@@ -13,19 +13,16 @@ Potions
     Player useability
     Button in fight View
 
-Character
-    Edit later
-        Real Money = 1Fr. per atr
-    Color for embed
-        Real Money = 1Fr.
+Markets
+    Ankauf von Items
 
 Guild customizable
     Edit Image
-        Real Money
+        Real Money Y
     Edit Emblem
-        Real Money
+        Real Money Y
     Edit Color
-        Real Money
+        Real Money Y
     
 
 Trades in ein View verwandeln   
@@ -43,7 +40,7 @@ Base
     Weapons
     Spells
 
-Post stelle für nicht eingesammelte items
+Poststelle für nicht eingesammelte items
     Bei Spieler speichern
     Unlimited items in bigger text based inventory
 
@@ -72,13 +69,43 @@ custom help commands
 
 Marrieges
     player can marry
+    gemeinsames item lager
 
 Mini games
     Casino
         Poker
         Blackjack
         Rulet
+    Eigene Casinos eröffnen
+        gewinnchance und auszahlungen festlegen
+            Games to unlock
+                Rulet 
+                Blackjack
+                Poker
+                Slot
+    Vorgegebene Casinos
+        Können random Items als gewinn geben mit geringer warscheinlichkeit
+            Liste drops der Items
+                in den Assets festlegen
+
+    Game class
+        Winchance
+        players
+        payouts
+        play
+        max bet
+        min bet
+
+    Casino class
+        games=[,]
+        owner
+        account #das geld das es eingenommen hat Wen im Minus wird das Casino geschlossen und der Spieler bekommt kein Geld mehr bis Schulden abbezahlt
+        
+
+
     
+
+
 PVP
     Battle players
     Tournaments
@@ -94,6 +121,9 @@ Trade View
 Fight mechanik
 
 Quests and Story update
+
+Start Work
+    Schöner machen der zusammelnden Items
 
 For website for buying shit or release notes
 from requests import get

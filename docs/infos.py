@@ -14,7 +14,7 @@ DESCRIPTION="Dieser Bot kann für ein eigenes RPG verwendet werden. Man kann eig
 DISCORD_SERVER="https://discord.gg/Aumxy5wJxf"
 DISCORDACC="Retro#5636"
 VERSIONTIMELINE="""
-**V0.1.3.6 Prere**:Prerelease: Potions eingefügt|
+**V0.1.3.6 Prere**:Prerelease: Potions eingefügt, Bugs für Guilden behoben einige verbesserungen an dem Code|
 **V0.1.3.5 Prere**:Prerelease: Guilden implementiert, Bountysystem wird überarbeitet: Neu Work und item collect bountys werden eingefügt|
 **V0.1.3.4 Prere**:Prerelease: Arbeit an Kampfsystem aufgehoben, Guilden werden eingefügt, Problem mit Bounty einsammeln wird überwacht|
 **V0.1.3.3 Prere**:Prerelease: Kampfsystem in arbeit, Märkte auf View, Artefakte eingefügt|

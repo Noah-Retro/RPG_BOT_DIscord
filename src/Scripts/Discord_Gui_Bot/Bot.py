@@ -5,7 +5,7 @@ from nextcord.ext import commands
 from src.Scripts.Discord_Gui_Bot.Cogs.fight_cog import Fight_Cog
 from src.Scripts.Discord_Gui_Bot.Cogs.suggsetion_cog import Suggsetion_Cog
 from src.Scripts.Discord_Gui_Bot.Cogs.guild_cog import Guild_Cog
-from docs.conf import PREFIX, TOKEN
+from docs.conf import TOKEN
 from src.Scripts.Discord_Gui_Bot.Cogs.admin_cog import admin
 #from src.Scripts.Discord_Gui_Bot.Cogs.rollplay_cog import Rollplay
 from src.Scripts.Discord_Gui_Bot.Cogs.bot_info_cog import infos
@@ -21,7 +21,7 @@ from src.Scripts.Classes.Output_Beautifer.loadbar import LoadBar
 
 intents = nextcord.Intents.all()
 
-bot = commands.Bot(command_prefix=PREFIX,intents=intents)#
+bot = commands.Bot(intents=intents)#
 #bot.activity = nextcord.Game(name="RPG")
 
 lb = LoadBar(title="Cogs registered")
