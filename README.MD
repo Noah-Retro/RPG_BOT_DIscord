@@ -43,31 +43,6 @@ After collecting enough feedback and experence what the player want to customice
 It is an test phase for how well it is reseaved, how the player interact with the open assets and how much it is used. If the players don't like to create own assets, storys and so on, it was just an year of wasted time instead of multiple years and money.
 
 
-# Monetisation
-
-The reason why some features are behinde a pay wall are:
-
- - The server for the bot costs
- - The features behinde a pay wall are only costmetical or have none influence on the gameplay
- - One year is one year even it would make me happy just to see the community grow and use the progamm I created, I have to pay bills and life with something.
-
-## Features behind pay walls
-
-The only feature behinde a pay wall is seting a color for the embeds. You can **edit the colors** of your **caracter embed, inventory embed and your guild embed**.
-
-## Features behind a "soft" pay wall
-
-These features are not exclusive to realworld money but you have the option to pay for it or for the first time it is free. 
-
- - Character customization
-	 - You have **all option while creating an character for free,** but after you created one you can only change it with real world money.
-	 - The free option is to delete your character and create a new one.
- - Suggsetion of changes or new things
-	 - you can pay for an suggsetion so it will get a **higher priority** than unpayed suggsetions
--	Guild customization
-	-	You can only edit your guild **after creation** with **real world money** or delete it and create a new one
-
-
 # Privacy policy
 
 The bot does not store any of your send messages other than the suggsetions. 
