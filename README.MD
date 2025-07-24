@@ -75,10 +75,7 @@ Packages used:
 
 # Licens
 
-All rights are by the developers of this programm.
-Third partys shall only acces the code with the agreement of the publisher.
-To distribute, copy, use for his own or modify this software needs a permition of the creator.
-Man just ask if you want to modify it or use in an private menar.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Ending
 Sorry for my horrible english writting.
