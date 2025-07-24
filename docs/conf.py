@@ -12,7 +12,7 @@ ENEMY_LEVEL_MULTYPLIER = 1
 ASSET_PATH = "src\Assets" #Can be changed to an other folder. The folder has to contain at leased the given subfolders from this sample
 
 
-TOKEN = "ODkzMDQzMTAzMDUxNzA2Mzc4.GjWvqr.7iHCO3weETwTp3_Xl4FxHF-fwNBsIZupdYhbj0" #Discord Bot Token
+TOKEN = "" #Discord Bot Token
 
 #Bot interactions
 GAME='RPG'
